@@ -13,6 +13,8 @@ namespace Calculator
             "a - Add",
             "s - Subtract",
             "m - Multiply",
+            "dr - Divide Remainder",
+            "ex- Exit",
              };
 
         public static void Add(double a, double b)
@@ -30,5 +32,9 @@ namespace Calculator
             Console.WriteLine( $"{a} - {b} = {a - b}");
         }
 
+        internal static void DivideRemainder(double a, double b)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
