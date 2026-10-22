@@ -43,6 +43,14 @@
                         case "m":
                            OptionsManager.Multiply(a, b);
                             break;
+                        case "dr":
+                            OptionsManager.DivideRemainder(a, b);
+                            break;
+                        case "ex":
+                            Console.Clear();
+                            Console.WriteLine("Goodbye");
+                            Console.ReadKey(true);
+                            return;
                     }
                 }
                 catch (InvalidOperationException ex)
@@ -52,26 +60,7 @@
                 Console.WriteLine("Press any key to continue...");
                 Console.ReadKey(true);
 
-                switch (choice)
-                {
-                    case "a":
-                        OptionsManager.Add(a, b);
-                        break;
-                    case "s":
-                        OptionsManager.Subtract(a, b);
-                        break;
-                    case "m":
-                        OptionsManager.Multiply(a, b);
-                        break;
-                    case "dr":
-                        OptionsManager.DivideRemainder(a, b);
-                        break;
-                    case "ex":
-                        Console.Clear();
-                        Console.WriteLine("Goodbye");
-                        Console.ReadKey(true);
-                        return;
-                }
+                
 
                 while (true)
                 {
